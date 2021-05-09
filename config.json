@@ -2,8 +2,10 @@
   "name": "ScyllaConnectorConnector",
   "config": {
     "connector.class": "com.scylladb.cdc.debezium.connector.ScyllaConnector",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
     "scylla.cluster.ip.addresses": "scylladb:9042",
     "scylla.name": "ScyllaConnectorConnector",
-    "scylla.table.names": "quickstart_keyspace.orders"
+    "scylla.table.names": "quickstart_keyspace.orders",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter"
   }
 }
