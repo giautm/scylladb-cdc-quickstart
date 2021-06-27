@@ -59,7 +59,7 @@ services:
       dockerfile: scylla-cdc.Dockerfile
       args:
         CP_VERSION: 6.1.1
-        KAFKA_CONNECT_SCYLLA_VERSION: 1.0.0
+        KAFKA_CONNECT_SCYLLA_VERSION: 1.0.1
     hostname: connect
     container_name: connect
     depends_on:
