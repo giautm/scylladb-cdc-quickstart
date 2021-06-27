@@ -6,5 +6,5 @@ ENV CONNECT_PLUGIN_PATH="/usr/share/java,/usr/share/confluent-hub-components"
 
 ARG KAFKA_CONNECT_SCYLLA_VERSION=1.0.1
 
-RUN confluent-hub install scylladb/scylla-cdc-source-connector:${KAFKA_CONNECT_SCYLLA_VERSION}
+RUN confluent-hub install --no-prompt scylladb/scylla-cdc-source-connector:${KAFKA_CONNECT_SCYLLA_VERSION}
 
